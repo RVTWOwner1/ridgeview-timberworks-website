@@ -39,8 +39,28 @@ filters.forEach((button) => {
   });
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  formNote.textContent =
-    "Draft captured locally. When this moves to Netlify, this form can send directly to Ridgeview Timberworks.";
+  const submitButton = form.querySelector("button[type='submit']");
+  submitButton.disabled = true;
+  formNote.textContent = "Sending your quote request...";
+
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      body: new FormData(form),
+    });
+
+    if (!response.ok) {
+      throw new Error("The quote request could not be submitted.");
+    }
+
+    form.reset();
+    formNote.textContent = "Thank you. Your quote request has been sent to Ridgeview Timberworks.";
+  } catch (error) {
+    formNote.textContent =
+      "Something went wrong while sending the quote request. Please call or email Ridgeview Timberworks directly.";
+  } finally {
+    submitButton.disabled = false;
+  }
 });

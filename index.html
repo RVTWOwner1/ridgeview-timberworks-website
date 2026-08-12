@@ -282,7 +282,12 @@
             <a href="mailto:info@ridgeviewtimberworks.com">info@ridgeviewtimberworks.com</a>
           </div>
         </div>
-        <form class="quote-form" name="ridgeview-quote" data-netlify="true">
+        <form class="quote-form" name="ridgeview-quote" method="POST" enctype="multipart/form-data" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="ridgeview-quote" />
+          <input type="hidden" name="subject" value="New Ridgeview Timberworks quote request (%{submissionId})" />
+          <p class="honeypot">
+            <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+          </p>
           <label>
             Name
             <input name="name" autocomplete="name" required />
@@ -313,10 +318,18 @@
             <textarea name="notes" rows="5" placeholder="Tell us what you are building, approximate sizes, timing, species, finish goals, and anything else that matters."></textarea>
           </label>
           <label class="full">
-            Plans or Reference Photos
-            <input name="files" type="file" multiple />
+            Plans or Engineering Documents
+            <input name="plans" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic,.dwg,.dxf" />
           </label>
-          <button class="button primary full" type="submit">Prepare Quote Request</button>
+          <label class="full">
+            Reference Photo
+            <input name="reference-photo" type="file" accept=".jpg,.jpeg,.png,.heic,.pdf" />
+          </label>
+          <label class="full">
+            Additional File
+            <input name="additional-file" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic,.dwg,.dxf" />
+          </label>
+          <button class="button primary full" type="submit">Submit Quote Request</button>
           <p class="form-note" role="status"></p>
         </form>
       </section>
