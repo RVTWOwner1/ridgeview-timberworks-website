@@ -692,11 +692,34 @@ textarea {
   }
 
   .service-card {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    background: var(--white);
   }
 
   .service-card img {
-    min-height: 220px;
+    display: block;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .service-card div {
+    padding: 22px;
+    background: var(--white);
+  }
+
+  .service-card h3 {
+    margin-bottom: 8px;
+    color: var(--ink);
+    font-size: 1.24rem;
+  }
+
+  .service-card p,
+  .service-card ul {
+    color: #2f3931;
   }
 
   .gallery-item,
