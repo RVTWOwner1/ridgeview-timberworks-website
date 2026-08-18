@@ -1,23 +1,124 @@
 {
-  "seo": {
-    "title": "Ridgeview Timberworks | Custom Timber Trusses, Beams & Outdoor Structures",
-    "description": "Ridgeview Timberworks designs and fabricates custom timber trusses, beams, mantels, and outdoor timber structures from Farmersville, Texas."
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Call, email, or send plans when you are ready.",
+    "cards": [
+      {
+        "heading": "Ridgeview Timberworks",
+        "body": "2590 Hwy. 78 South<br />Farmersville, TX 75442"
+      },
+      {
+        "heading": "Call or Email"
+      },
+      {
+        "heading": "Custom Cut Work",
+        "body": "Rafter tails, corbels, brackets, and other cut details can be made from standard patterns or approved drawings."
+      }
+    ]
   },
-  "hero": {
-    "eyebrow": "Custom timberwork made in Farmersville, Texas",
-    "heading": "Timber Trusses, Beams, Mantels & Outdoor Structures",
-    "body": "Ridgeview Timberworks builds the heavy timber pieces that frame a room, porch, entry, fireplace, or outdoor living area.",
-    "primaryButton": "Request a Quote",
-    "secondaryButton": "View the Work"
+  "craft": {
+    "eyebrow": "Built with jobsite experience",
+    "heading": "Good timberwork starts with clear dimensions.",
+    "body": "Ridgeview Timberworks reviews the drawings, asks about the opening sizes and support points, and builds the timber pieces to match the approved plan. Trusses may use traditional joinery, steel plates with through bolts, or engineered screw assemblies depending on the job.",
+    "linkLabel": "Send plans for review"
   },
   "intro": {
-    "eyebrow": "Made for real homes and jobsites",
-    "heading": "Custom timberwork built from your plans.",
-    "body": "Ridgeview Timberworks works with homeowners, builders, architects, and contractors. Send plans, dimensions, or photos, and Ridgeview Timberworks can help price the trusses, beams, posts, mantels, brackets, and outdoor timber pieces needed for the job."
+    "eyebrow": "Made for upscale homes and commercial properties",
+    "heading": "Custom timberwork built to spec from your plans.",
+    "body": "Ridgeview Timberworks works with builders, architects, and contractors. Send plans, dimensions, photos, etc. and Ridgeview Timberworks can help price the trusses, beams, posts, mantels, brackets, and outdoor timber pieces needed for the job."
+  },
+  "process": {
+    "eyebrow": "Quote Process",
+    "heading": "What happens after you send a quote request.",
+    "steps": [
+      {
+        "heading": "Send Plans",
+        "body": "Send drawings, dimensions, photos, species preferences, project location, and timing."
+      },
+      {
+        "heading": "Review Details",
+        "body": "Ridgeview Timberworks checks the sizes, quantities, timber type, hardware needs, and delivery details."
+      },
+      {
+        "heading": "Approve the Estimate",
+        "body": "Production begins after pricing, drawings, patterns, and key details are approved."
+      },
+      {
+        "heading": "Coordinate Delivery",
+        "body": "Large trusses and long timbers may require forklift or crane access at the jobsite."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Portfolio",
+    "heading": "Project Gallery",
+    "body": "Use the links below to browse examples by Project Type.",
+    "categories": {
+      "trusses": "Timber Trusses",
+      "beams": "Timber Beams & Posts",
+      "outdoor": "Outdoor Living Timber Structures",
+      "mantels": "Timber Mantels, Brackets, etc."
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Common questions before requesting a quote.",
+    "items": [
+      {
+        "question": "When should I contact Ridgeview Timberworks?",
+        "answer": "Contact Ridgeview Timberworks before framing starts whenever possible. Trusses, beams, and posts are much easier to price and coordinate when they are included in the plans early."
+      },
+      {
+        "question": "What do you need to quote my project?",
+        "answer": "A final set of plans is best. For early budgeting, rough drawings and photos can help. For firm pricing, Ridgeview Timberworks needs dimensions, quantities, species, texture preferences, engineering requirements, and delivery location."
+      },
+      {
+        "question": "Can Ridgeview Timberworks build structural trusses?",
+        "answer": "Yes. If the project includes structural trusses, send the engineering documents and stamped truss drawings with the quote request. Those documents are required before a firm estimate can be generated."
+      },
+      {
+        "question": "Is a deposit required?",
+        "answer": "Yes. Because timbers are ordered and cut for each job, Ridgeview Timberworks typically requires a deposit when the contract is signed."
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Custom Timberworks made in Farmersville, Texas",
+    "heading": "Timber Trusses, Beams, Posts, Mantels & Outdoor Living Structures",
+    "body": "Ridgeview Timberworks creates heavy timber pieces that enhance and beautify a room, porch, entry, fireplace, or outdoor living area.",
+    "primaryButton": "Request a Quote",
+    "secondaryButton": "View our Work"
+  },
+  "footer": {
+    "body": "Custom timber trusses, beams, mantels, and outdoor structures from Farmersville, Texas."
+  },
+  "quote": {
+    "eyebrow": "Request a Quote",
+    "heading": "Send the project details, and Ridgeview Timberworks will quote the timber package.",
+    "body": "Plans, dimensions, photos, species, texture preferences, and delivery location help Ridgeview Timberworks price the job correctly. If the project includes structural trusses, your engineering documents and stamped truss drawings are required before a firm estimate can be generated.",
+    "contactHeading": "Prefer to talk first?",
+    "form": {
+      "phoneLabel": "Phone",
+      "nameLabel": "Name",
+      "plansLabel": "Plans or Engineering Documents",
+      "referencePhotoLabel": "Reference Photo",
+      "additionalFileLabel": "Additional File",
+      "notesPlaceholder": "Tell us what you are building, approximate sizes, timing, species, texture preferences, and anything else that matters.",
+      "notesLabel": "Project Notes",
+      "emailLabel": "Email",
+      "phaseLabel": "Project Phase",
+      "submitLabel": "Submit Quote Request",
+      "locationPlaceholder": "City, state",
+      "locationLabel": "Project Location"
+    }
+  },
+  "seo": {
+    "title": "Ridgeview Timberworks | Custom Timber Trusses, Beams, Posts & Outdoor Living Structures",
+    "description": "Ridgeview Timberworks designs and fabricates custom timber trusses, beams, mantels, and outdoor living structures from Farmersville, Texas."
   },
   "services": {
     "eyebrow": "Services",
-    "heading": "Tell us what you are building, and we will quote the timber parts.",
+    "heading": "Tell us what you are building, and we will quote each timber needed.",
     "items": {
       "trusses": {
         "heading": "Timber Trusses",
@@ -64,106 +165,5 @@
         ]
       }
     }
-  },
-  "craft": {
-    "eyebrow": "Built with jobsite experience",
-    "heading": "Good timberwork starts with clear dimensions.",
-    "body": "Ridgeview Timberworks reviews the drawings, asks about the opening sizes and support points, and builds the timber pieces to match the approved plan. Trusses may use traditional joinery, steel plates with through bolts, or engineered screw assemblies depending on the job.",
-    "linkLabel": "Send plans for review"
-  },
-  "gallery": {
-    "eyebrow": "Portfolio",
-    "heading": "Project Gallery",
-    "body": "Use the links below to browse examples by Project Type.",
-    "categories": {
-      "trusses": "Timber Trusses",
-      "beams": "Timber Beams & Posts",
-      "outdoor": "Outdoor Living Timber Structures",
-      "mantels": "Timber Mantels, Brackets, etc."
-    }
-  },
-  "process": {
-    "eyebrow": "Quote Process",
-    "heading": "What happens after you send a quote request.",
-    "steps": [
-      {
-        "heading": "Send Plans",
-        "body": "Send drawings, dimensions, photos, species preferences, project location, and timing."
-      },
-      {
-        "heading": "Review Details",
-        "body": "Ridgeview Timberworks checks the sizes, quantities, timber type, hardware needs, and delivery details."
-      },
-      {
-        "heading": "Approve the Estimate",
-        "body": "Production begins after pricing, drawings, patterns, and key details are approved."
-      },
-      {
-        "heading": "Coordinate Delivery",
-        "body": "Large trusses and long timbers may require forklift or crane access at the jobsite."
-      }
-    ]
-  },
-  "faq": {
-    "eyebrow": "FAQ",
-    "heading": "Common questions before requesting a quote.",
-    "items": [
-      {
-        "question": "When should I contact Ridgeview Timberworks?",
-        "answer": "Contact Ridgeview Timberworks before framing starts whenever possible. Trusses, beams, and posts are much easier to price and coordinate when they are included in the plans early."
-      },
-      {
-        "question": "What do you need to quote my project?",
-        "answer": "A final set of plans is best. For early budgeting, rough drawings and photos can help. For firm pricing, Ridgeview Timberworks needs dimensions, quantities, species, texture preferences, engineering requirements, and delivery location."
-      },
-      {
-        "question": "Can Ridgeview Timberworks build structural trusses?",
-        "answer": "Yes. If the project includes structural trusses, send the engineering documents and stamped truss drawings with the quote request. Those documents are required before a firm estimate can be generated."
-      },
-      {
-        "question": "Is a deposit required?",
-        "answer": "Yes. Because timbers are ordered and cut for each job, Ridgeview Timberworks typically requires a deposit when the contract is signed."
-      }
-    ]
-  },
-  "quote": {
-    "eyebrow": "Request a Quote",
-    "heading": "Send the project details, and Ridgeview Timberworks will quote the timber package.",
-    "body": "Plans, dimensions, photos, species, texture preferences, and delivery location help Ridgeview Timberworks price the job correctly. If the project includes structural trusses, your engineering documents and stamped truss drawings are required before a firm estimate can be generated.",
-    "contactHeading": "Prefer to talk first?",
-    "form": {
-      "nameLabel": "Name",
-      "emailLabel": "Email",
-      "phoneLabel": "Phone",
-      "locationLabel": "Project Location",
-      "locationPlaceholder": "City, state",
-      "phaseLabel": "Project Phase",
-      "notesLabel": "Project Notes",
-      "notesPlaceholder": "Tell us what you are building, approximate sizes, timing, species, texture preferences, and anything else that matters.",
-      "plansLabel": "Plans or Engineering Documents",
-      "referencePhotoLabel": "Reference Photo",
-      "additionalFileLabel": "Additional File",
-      "submitLabel": "Submit Quote Request"
-    }
-  },
-  "contact": {
-    "eyebrow": "Contact",
-    "heading": "Call, email, or send plans when you are ready.",
-    "cards": [
-      {
-        "heading": "Ridgeview Timberworks",
-        "body": "2590 Hwy. 78 South<br />Farmersville, TX 75442"
-      },
-      {
-        "heading": "Call or Email"
-      },
-      {
-        "heading": "Custom Cut Work",
-        "body": "Rafter tails, corbels, brackets, and other cut details can be made from standard patterns or approved drawings."
-      }
-    ]
-  },
-  "footer": {
-    "body": "Custom timber trusses, beams, mantels, and outdoor structures from Farmersville, Texas."
   }
 }
