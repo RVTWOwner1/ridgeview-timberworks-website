@@ -772,3 +772,28 @@ textarea {
     width: 230px;
   }
 }
+
+/* Gallery prototype: horizontal scrolling portfolio row */
+.gallery-scroll-grid {
+  display: flex;
+  grid-template-columns: none;
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  padding: 4px 4px 18px;
+}
+
+.gallery-scroll-grid .gallery-item {
+  flex: 0 0 clamp(280px, 32vw, 430px);
+  scroll-snap-align: start;
+}
+
+.gallery-scroll-grid::-webkit-scrollbar {
+  height: 12px;
+}
+
+.gallery-scroll-grid::-webkit-scrollbar-thumb {
+  background: #b58b5a;
+  border-radius: 999px;
+}
