@@ -2,6 +2,7 @@ const menuButton = document.querySelector(".menu-button");
 const nav = document.querySelector(".main-nav");
 const filters = document.querySelectorAll(".filter");
 const galleryItems = document.querySelectorAll(".gallery-item");
+const galleryLinks = document.querySelectorAll("[data-gallery-filter]");
 const form = document.querySelector(".quote-form");
 const formNote = document.querySelector(".form-note");
 const header = document.querySelector(".site-header");
@@ -29,15 +30,25 @@ nav.querySelectorAll("a").forEach((link) => {
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-    filters.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    galleryItems.forEach((item) => {
-      item.classList.toggle("hidden", filter !== "all" && item.dataset.category !== filter);
-    });
+    setGalleryFilter(button.dataset.filter);
   });
 });
+
+galleryLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    setGalleryFilter(link.dataset.galleryFilter);
+  });
+});
+
+const setGalleryFilter = (filter) => {
+  filters.forEach((item) => {
+    item.classList.toggle("active", item.dataset.filter === filter);
+  });
+
+  galleryItems.forEach((item) => {
+    item.classList.toggle("hidden", filter !== "all" && item.dataset.category !== filter);
+  });
+};
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
