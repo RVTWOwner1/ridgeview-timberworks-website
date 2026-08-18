@@ -123,7 +123,6 @@ const setCarouselCategory = (category) => {
       (photo) => `
         <figure class="gallery-carousel-slide">
           <img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.alt)}" loading="lazy" />
-          <figcaption>${escapeHtml(photo.caption)}</figcaption>
         </figure>
       `
     )
@@ -152,7 +151,7 @@ homeGalleryLinks.forEach((link) => {
 const scrollGallery = (direction) => {
   if (!carouselTrack) return;
   const slide = carouselTrack.querySelector(".gallery-carousel-slide");
-  const distance = slide ? slide.getBoundingClientRect().width + 15 : carouselTrack.clientWidth * 0.8;
+  const distance = slide ? slide.getBoundingClientRect().width + 5 : carouselTrack.clientWidth * 0.8;
   carouselTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
 };
 
