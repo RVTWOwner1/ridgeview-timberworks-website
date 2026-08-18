@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ridgeview Timberworks | Custom Timber Trusses, Beams & Outdoor Structures</title>
     <meta
+      data-content-attr="seo.description:content"
       name="description"
       content="Ridgeview Timberworks designs and fabricates custom timber trusses, beams, mantels, and outdoor timber structures from Farmersville, Texas."
     />
@@ -15,6 +16,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -43,25 +56,25 @@
         <img class="hero-image" src="assets/hero-rdc.jpg" alt="Custom interior timber trusses built by Ridgeview Timberworks" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Custom timberwork made in Farmersville, Texas</p>
-          <h1>Timber Trusses, Beams, Mantels & Outdoor Structures</h1>
-          <p>
+          <p class="eyebrow" data-content="hero.eyebrow">Custom timberwork made in Farmersville, Texas</p>
+          <h1 data-content="hero.heading">Timber Trusses, Beams, Mantels & Outdoor Structures</h1>
+          <p data-content="hero.body">
             Ridgeview Timberworks builds the heavy timber pieces that frame a room, porch, entry, fireplace, or outdoor
             living area.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#quote">Request a Quote</a>
-            <a class="button secondary" href="#gallery">View the Work</a>
+            <a class="button primary" href="#quote" data-content="hero.primaryButton">Request a Quote</a>
+            <a class="button secondary" href="#gallery" data-content="hero.secondaryButton">View the Work</a>
           </div>
         </div>
       </section>
 
       <section class="intro-section">
         <div>
-          <p class="eyebrow">Made for real homes and jobsites</p>
-          <h2>Custom timberwork built from your plans.</h2>
+          <p class="eyebrow" data-content="intro.eyebrow">Made for real homes and jobsites</p>
+          <h2 data-content="intro.heading">Custom timberwork built from your plans.</h2>
         </div>
-        <p>
+        <p data-content="intro.body">
           Ridgeview Timberworks works with homeowners, builders, architects, and contractors. Send plans, dimensions, or
           photos, and Ridgeview Timberworks can help price the trusses, beams, posts, mantels, brackets, and outdoor
           timber pieces needed for the job.
@@ -70,21 +83,21 @@
 
       <section id="services" class="services-section">
         <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2>Tell us what you are building, and we will quote the timber parts.</h2>
+          <p class="eyebrow" data-content="services.eyebrow">Services</p>
+          <h2 data-content="services.heading">Tell us what you are building, and we will quote the timber parts.</h2>
         </div>
         <div class="service-grid">
           <article class="service-card" id="trusses">
             <a class="service-image-link" href="#gallery" data-home-gallery-filter="trusses">
               <img src="assets/truss-interior.jpg" alt="Interior timber trusses" />
-              <span>View truss gallery</span>
+              <span data-content="services.items.trusses.linkLabel">View truss gallery</span>
             </a>
             <div>
-              <h3>Timber Trusses</h3>
-              <p>
+              <h3 data-content="services.items.trusses.heading">Timber Trusses</h3>
+              <p data-content="services.items.trusses.body">
                 Timber trusses for great rooms, porches, entries, churches, pavilions, and commercial spaces.
               </p>
-              <ul>
+              <ul data-content-list="services.items.trusses.bullets">
                 <li>Mortise-and-tenon options</li>
                 <li>Metal plate and through-bolt assemblies</li>
                 <li>Structural trusses require engineering documents</li>
@@ -96,14 +109,14 @@
           <article class="service-card" id="beams">
             <a class="service-image-link" href="#gallery" data-home-gallery-filter="beams">
               <img src="assets/beam-ceiling.jpg" alt="Custom timber beam ceiling" />
-              <span>View beam and post gallery</span>
+              <span data-content="services.items.beams.linkLabel">View beam and post gallery</span>
             </a>
             <div>
-              <h3>Timber Beams &amp; Posts</h3>
-              <p>
+              <h3 data-content="services.items.beams.heading">Timber Beams &amp; Posts</h3>
+              <p data-content="services.items.beams.body">
                 Beams, posts, ceiling timbers, and entry pieces cut to the sizes shown on your plans.
               </p>
-              <ul>
+              <ul data-content-list="services.items.beams.bullets">
                 <li>Sawn, planed, or shaped profiles</li>
                 <li>Douglas Fir and species by request</li>
                 <li>Built to match trusses, mantels, and brackets</li>
@@ -115,14 +128,14 @@
           <article class="service-card" id="outdoor">
             <a class="service-image-link" href="#gallery" data-home-gallery-filter="outdoor">
               <img src="assets/outdoor-hanover.jpg" alt="Outdoor timber structure beside a pool" />
-              <span>View outdoor gallery</span>
+              <span data-content="services.items.outdoor.linkLabel">View outdoor gallery</span>
             </a>
             <div>
-              <h3>Outdoor Living Timber Structures</h3>
-              <p>
+              <h3 data-content="services.items.outdoor.heading">Outdoor Living Timber Structures</h3>
+              <p data-content="services.items.outdoor.body">
                 Timber for pavilions, pergolas, covered patios, pool areas, outdoor kitchens, and entry features.
               </p>
-              <ul>
+              <ul data-content-list="services.items.outdoor.bullets">
                 <li>Built for homes, neighborhoods, and commercial projects</li>
                 <li>Cut for the dimensions of the structure</li>
                 <li>Delivery planning for large timbers</li>
@@ -134,14 +147,14 @@
           <article class="service-card" id="mantels">
             <a class="service-image-link" href="#gallery" data-home-gallery-filter="mantels">
               <img src="assets/mantel-timeworn.jpg" alt="Custom time-worn fireplace mantel" />
-              <span>View mantel and bracket gallery</span>
+              <span data-content="services.items.mantels.linkLabel">View mantel and bracket gallery</span>
             </a>
             <div>
-              <h3>Timber Mantels, Brackets, etc.</h3>
-              <p>
+              <h3 data-content="services.items.mantels.heading">Timber Mantels, Brackets, etc.</h3>
+              <p data-content="services.items.mantels.body">
                 Mantels, brackets, corbels, rafter tails, and fireplace timbers built to fit the space.
               </p>
-              <ul>
+              <ul data-content-list="services.items.mantels.bullets">
                 <li>Built to room dimensions</li>
                 <li>Hand-hewn and time-worn texture options</li>
                 <li>Multiple hand-textured options</li>
@@ -154,14 +167,14 @@
 
       <section class="craft-section">
         <div class="craft-copy">
-          <p class="eyebrow">Built with jobsite experience</p>
-          <h2>Good timberwork starts with clear dimensions.</h2>
-          <p>
+          <p class="eyebrow" data-content="craft.eyebrow">Built with jobsite experience</p>
+          <h2 data-content="craft.heading">Good timberwork starts with clear dimensions.</h2>
+          <p data-content="craft.body">
             Ridgeview Timberworks reviews the drawings, asks about the opening sizes and support points, and builds the
             timber pieces to match the approved plan. Trusses may use traditional joinery, steel plates with through
             bolts, or engineered screw assemblies depending on the job.
           </p>
-          <a class="text-link" href="#quote">Send plans for review</a>
+          <a class="text-link" href="#quote" data-content="craft.linkLabel">Send plans for review</a>
         </div>
         <img src="assets/detail-joinery.jpg" alt="Close-up of timber joinery and through bolts" />
       </section>
@@ -169,14 +182,14 @@
       <section id="gallery" class="gallery-section">
         <div class="gallery-carousel-heading">
           <div class="section-heading">
-            <p class="eyebrow">Portfolio</p>
-            <h2>Project Gallery</h2>
-            <p>Use the links below to browse examples by Project Type.</p>
+            <p class="eyebrow" data-content="gallery.eyebrow">Portfolio</p>
+            <h2 data-content="gallery.heading">Project Gallery</h2>
+            <p data-content="gallery.body">Use the links below to browse examples by Project Type.</p>
             <div class="gallery-category-nav" aria-label="Project gallery types">
-              <button class="gallery-category-button active" type="button" data-carousel-filter="trusses">Timber Trusses</button>
-              <button class="gallery-category-button" type="button" data-carousel-filter="beams">Timber Beams &amp; Posts</button>
-              <button class="gallery-category-button" type="button" data-carousel-filter="outdoor">Outdoor Living Timber Structures</button>
-              <button class="gallery-category-button" type="button" data-carousel-filter="mantels">Timber Mantels, Brackets, etc.</button>
+              <button class="gallery-category-button active" type="button" data-carousel-filter="trusses" data-content="gallery.categories.trusses">Timber Trusses</button>
+              <button class="gallery-category-button" type="button" data-carousel-filter="beams" data-content="gallery.categories.beams">Timber Beams &amp; Posts</button>
+              <button class="gallery-category-button" type="button" data-carousel-filter="outdoor" data-content="gallery.categories.outdoor">Outdoor Living Timber Structures</button>
+              <button class="gallery-category-button" type="button" data-carousel-filter="mantels" data-content="gallery.categories.mantels">Timber Mantels, Brackets, etc.</button>
             </div>
           </div>
         </div>
@@ -196,64 +209,64 @@
 
       <section id="process" class="process-section">
         <div class="section-heading">
-          <p class="eyebrow">Quote Process</p>
-          <h2>What happens after you send a quote request.</h2>
+          <p class="eyebrow" data-content="process.eyebrow">Quote Process</p>
+          <h2 data-content="process.heading">What happens after you send a quote request.</h2>
         </div>
         <div class="process-grid">
           <article>
             <span>01</span>
-            <h3>Send Plans</h3>
-            <p>Send drawings, dimensions, photos, species preferences, project location, and timing.</p>
+            <h3 data-content="process.steps.0.heading">Send Plans</h3>
+            <p data-content="process.steps.0.body">Send drawings, dimensions, photos, species preferences, project location, and timing.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Review Details</h3>
-            <p>Ridgeview Timberworks checks the sizes, quantities, timber type, hardware needs, and delivery details.</p>
+            <h3 data-content="process.steps.1.heading">Review Details</h3>
+            <p data-content="process.steps.1.body">Ridgeview Timberworks checks the sizes, quantities, timber type, hardware needs, and delivery details.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Approve the Estimate</h3>
-            <p>Production begins after pricing, drawings, patterns, and key details are approved.</p>
+            <h3 data-content="process.steps.2.heading">Approve the Estimate</h3>
+            <p data-content="process.steps.2.body">Production begins after pricing, drawings, patterns, and key details are approved.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Coordinate Delivery</h3>
-            <p>Large trusses and long timbers may require forklift or crane access at the jobsite.</p>
+            <h3 data-content="process.steps.3.heading">Coordinate Delivery</h3>
+            <p data-content="process.steps.3.body">Large trusses and long timbers may require forklift or crane access at the jobsite.</p>
           </article>
         </div>
       </section>
 
       <section id="faq" class="faq-section">
         <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>Common questions before requesting a quote.</h2>
+          <p class="eyebrow" data-content="faq.eyebrow">FAQ</p>
+          <h2 data-content="faq.heading">Common questions before requesting a quote.</h2>
         </div>
         <div class="faq-list">
           <details open>
-            <summary>When should I contact Ridgeview Timberworks?</summary>
-            <p>
+            <summary data-content="faq.items.0.question">When should I contact Ridgeview Timberworks?</summary>
+            <p data-content="faq.items.0.answer">
               Contact Ridgeview Timberworks before framing starts whenever possible. Trusses, beams, and posts are much
               easier to price and coordinate when they are included in the plans early.
             </p>
           </details>
           <details>
-            <summary>What do you need to quote my project?</summary>
-            <p>
+            <summary data-content="faq.items.1.question">What do you need to quote my project?</summary>
+            <p data-content="faq.items.1.answer">
               A final set of plans is best. For early budgeting, rough drawings and photos can help. For firm pricing,
               Ridgeview Timberworks needs dimensions, quantities, species, texture preferences, engineering requirements,
               and delivery location.
             </p>
           </details>
           <details>
-            <summary>Can Ridgeview Timberworks build structural trusses?</summary>
-            <p>
+            <summary data-content="faq.items.2.question">Can Ridgeview Timberworks build structural trusses?</summary>
+            <p data-content="faq.items.2.answer">
               Yes. If the project includes structural trusses, send the engineering documents and stamped truss drawings
               with the quote request. Those documents are required before a firm estimate can be generated.
             </p>
           </details>
           <details>
-            <summary>Is a deposit required?</summary>
-            <p>
+            <summary data-content="faq.items.3.question">Is a deposit required?</summary>
+            <p data-content="faq.items.3.answer">
               Yes. Because timbers are ordered and cut for each job, Ridgeview Timberworks typically requires a deposit
               when the contract is signed.
             </p>
@@ -263,15 +276,15 @@
 
       <section id="quote" class="quote-section">
         <div class="quote-copy">
-          <p class="eyebrow">Request a Quote</p>
-          <h2>Send the project details, and Ridgeview Timberworks will quote the timber package.</h2>
-          <p>
+          <p class="eyebrow" data-content="quote.eyebrow">Request a Quote</p>
+          <h2 data-content="quote.heading">Send the project details, and Ridgeview Timberworks will quote the timber package.</h2>
+          <p data-content="quote.body">
             Plans, dimensions, photos, species, texture preferences, and delivery location help Ridgeview Timberworks
             price the job correctly. If the project includes structural trusses, your engineering documents and stamped
             truss drawings are required before a firm estimate can be generated.
           </p>
           <div class="contact-card">
-            <strong>Prefer to talk first?</strong>
+            <strong data-content="quote.contactHeading">Prefer to talk first?</strong>
             <a href="tel:+19724294622">(972) 429-4622</a>
             <a href="mailto:info@ridgeviewtimberworks.com">info@ridgeviewtimberworks.com</a>
           </div>
@@ -283,23 +296,23 @@
             <label>Do not fill this out if you are human: <input name="bot-field" /></label>
           </p>
           <label>
-            Name
+            <span data-content="quote.form.nameLabel">Name</span>
             <input name="name" autocomplete="name" required />
           </label>
           <label>
-            Email
+            <span data-content="quote.form.emailLabel">Email</span>
             <input name="email" type="email" autocomplete="email" required />
           </label>
           <label>
-            Phone
+            <span data-content="quote.form.phoneLabel">Phone</span>
             <input name="phone" type="tel" autocomplete="tel" />
           </label>
           <label>
-            Project Location
-            <input name="location" placeholder="City, state" />
+            <span data-content="quote.form.locationLabel">Project Location</span>
+            <input name="location" placeholder="City, state" data-content-attr="quote.form.locationPlaceholder:placeholder" />
           </label>
           <label>
-            Project Phase
+            <span data-content="quote.form.phaseLabel">Project Phase</span>
             <select name="phase">
               <option>Budgeting</option>
               <option>Design</option>
@@ -308,43 +321,43 @@
             </select>
           </label>
           <label class="full">
-            Project Notes
-            <textarea name="notes" rows="5" placeholder="Tell us what you are building, approximate sizes, timing, species, texture preferences, and anything else that matters."></textarea>
+            <span data-content="quote.form.notesLabel">Project Notes</span>
+            <textarea name="notes" rows="5" placeholder="Tell us what you are building, approximate sizes, timing, species, texture preferences, and anything else that matters." data-content-attr="quote.form.notesPlaceholder:placeholder"></textarea>
           </label>
           <label class="full">
-            Plans or Engineering Documents
+            <span data-content="quote.form.plansLabel">Plans or Engineering Documents</span>
             <input name="plans" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic,.dwg,.dxf" />
           </label>
           <label class="full">
-            Reference Photo
+            <span data-content="quote.form.referencePhotoLabel">Reference Photo</span>
             <input name="reference-photo" type="file" accept=".jpg,.jpeg,.png,.heic,.pdf" />
           </label>
           <label class="full">
-            Additional File
+            <span data-content="quote.form.additionalFileLabel">Additional File</span>
             <input name="additional-file" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic,.dwg,.dxf" />
           </label>
-          <button class="button primary full" type="submit">Submit Quote Request</button>
+          <button class="button primary full" type="submit" data-content="quote.form.submitLabel">Submit Quote Request</button>
           <p class="form-note" role="status"></p>
         </form>
       </section>
 
       <section id="contact" class="contact-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Call, email, or send plans when you are ready.</h2>
+          <p class="eyebrow" data-content="contact.eyebrow">Contact</p>
+          <h2 data-content="contact.heading">Call, email, or send plans when you are ready.</h2>
         </div>
         <div class="contact-grid">
           <article>
-            <h3>Ridgeview Timberworks</h3>
-            <p>2590 Hwy. 78 South<br />Farmersville, TX 75442</p>
+            <h3 data-content="contact.cards.0.heading">Ridgeview Timberworks</h3>
+            <p data-content-html="contact.cards.0.body">2590 Hwy. 78 South<br />Farmersville, TX 75442</p>
           </article>
           <article>
-            <h3>Call or Email</h3>
+            <h3 data-content="contact.cards.1.heading">Call or Email</h3>
             <p><a href="tel:+19724294622">(972) 429-4622</a><br /><a href="mailto:info@ridgeviewtimberworks.com">info@ridgeviewtimberworks.com</a></p>
           </article>
           <article>
-            <h3>Custom Cut Work</h3>
-            <p>Rafter tails, corbels, brackets, and other cut details can be made from standard patterns or approved drawings.</p>
+            <h3 data-content="contact.cards.2.heading">Custom Cut Work</h3>
+            <p data-content="contact.cards.2.body">Rafter tails, corbels, brackets, and other cut details can be made from standard patterns or approved drawings.</p>
           </article>
         </div>
       </section>
@@ -352,7 +365,7 @@
 
     <footer class="site-footer">
       <img src="assets/ridgeview-logo.png" alt="Ridgeview Timberworks" />
-      <p>Custom timber trusses, beams, mantels, and outdoor structures from Farmersville, Texas.</p>
+      <p data-content="footer.body">Custom timber trusses, beams, mantels, and outdoor structures from Farmersville, Texas.</p>
       <nav aria-label="Footer navigation">
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
@@ -361,6 +374,7 @@
       </nav>
     </footer>
 
+    <script src="content-loader.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

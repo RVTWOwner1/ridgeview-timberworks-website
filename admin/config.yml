@@ -1,0 +1,172 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+site_url: "https://ridgeview-timberworks-preview.netlify.app"
+display_url: "https://ridgeview-timberworks-preview.netlify.app"
+logo_url: "/assets/ridgeview-logo-color.png"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Website Content"
+    files:
+      - label: "Ridgeview Timberworks Website"
+        name: "ridgeview_timberworks"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Browser Title", name: "title", widget: "string" }
+              - { label: "Search Description", name: "description", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Main Heading", name: "heading", widget: "string" }
+              - { label: "Body Text", name: "body", widget: "text" }
+              - { label: "Primary Button", name: "primaryButton", widget: "string" }
+              - { label: "Secondary Button", name: "secondaryButton", widget: "string" }
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Text", name: "body", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Service Cards"
+                name: "items"
+                widget: "object"
+                fields:
+                  - label: "Timber Trusses"
+                    name: "trusses"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string" }
+                      - { label: "Image Link Text", name: "linkLabel", widget: "string" }
+                      - { label: "Body Text", name: "body", widget: "text" }
+                      - { label: "Bullets", name: "bullets", widget: "list", field: { label: "Bullet", name: "bullet", widget: "string" } }
+                  - label: "Timber Beams & Posts"
+                    name: "beams"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string" }
+                      - { label: "Image Link Text", name: "linkLabel", widget: "string" }
+                      - { label: "Body Text", name: "body", widget: "text" }
+                      - { label: "Bullets", name: "bullets", widget: "list", field: { label: "Bullet", name: "bullet", widget: "string" } }
+                  - label: "Outdoor Living Timber Structures"
+                    name: "outdoor"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string" }
+                      - { label: "Image Link Text", name: "linkLabel", widget: "string" }
+                      - { label: "Body Text", name: "body", widget: "text" }
+                      - { label: "Bullets", name: "bullets", widget: "list", field: { label: "Bullet", name: "bullet", widget: "string" } }
+                  - label: "Timber Mantels, Brackets, etc."
+                    name: "mantels"
+                    widget: "object"
+                    fields:
+                      - { label: "Heading", name: "heading", widget: "string" }
+                      - { label: "Image Link Text", name: "linkLabel", widget: "string" }
+                      - { label: "Body Text", name: "body", widget: "text" }
+                      - { label: "Bullets", name: "bullets", widget: "list", field: { label: "Bullet", name: "bullet", widget: "string" } }
+          - label: "Craft Section"
+            name: "craft"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Text", name: "body", widget: "text" }
+              - { label: "Link Text", name: "linkLabel", widget: "string" }
+          - label: "Gallery Section"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Text", name: "body", widget: "text" }
+              - label: "Project Type Button Labels"
+                name: "categories"
+                widget: "object"
+                fields:
+                  - { label: "Trusses", name: "trusses", widget: "string" }
+                  - { label: "Beams & Posts", name: "beams", widget: "string" }
+                  - { label: "Outdoor", name: "outdoor", widget: "string" }
+                  - { label: "Mantels & Brackets", name: "mantels", widget: "string" }
+          - label: "Quote Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Body Text", name: "body", widget: "text" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+          - label: "Request a Quote"
+            name: "quote"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Text", name: "body", widget: "text" }
+              - { label: "Contact Card Heading", name: "contactHeading", widget: "string" }
+              - label: "Form Labels"
+                name: "form"
+                widget: "object"
+                fields:
+                  - { label: "Name Label", name: "nameLabel", widget: "string" }
+                  - { label: "Email Label", name: "emailLabel", widget: "string" }
+                  - { label: "Phone Label", name: "phoneLabel", widget: "string" }
+                  - { label: "Location Label", name: "locationLabel", widget: "string" }
+                  - { label: "Location Placeholder", name: "locationPlaceholder", widget: "string" }
+                  - { label: "Phase Label", name: "phaseLabel", widget: "string" }
+                  - { label: "Notes Label", name: "notesLabel", widget: "string" }
+                  - { label: "Notes Placeholder", name: "notesPlaceholder", widget: "text" }
+                  - { label: "Plans Upload Label", name: "plansLabel", widget: "string" }
+                  - { label: "Reference Photo Label", name: "referencePhotoLabel", widget: "string" }
+                  - { label: "Additional File Label", name: "additionalFileLabel", widget: "string" }
+                  - { label: "Submit Button", name: "submitLabel", widget: "string" }
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Small Heading", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Body Text", name: "body", widget: "text", required: false }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Footer Text", name: "body", widget: "text" }
