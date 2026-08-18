@@ -497,6 +497,7 @@ section {
   position: relative;
   flex: 0 0 clamp(255px, 36vw, 612px);
   height: clamp(264px, 29vw, 442px);
+  margin: 0;
   overflow: hidden;
   scroll-snap-align: start;
   background: #111;
