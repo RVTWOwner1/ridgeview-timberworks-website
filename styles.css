@@ -436,10 +436,7 @@ section {
 }
 
 .gallery-carousel-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
-  gap: clamp(22px, 4vw, 52px);
-  align-items: end;
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -455,18 +452,19 @@ section {
 .gallery-category-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .gallery-category-button {
-  min-height: 44px;
-  padding: 0 16px;
+  min-height: 24px;
+  padding: 2px 16px 3px;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--white);
   color: var(--ink);
   font-family: var(--display-font);
+  font-size: 0.86rem;
   font-weight: 900;
   cursor: pointer;
 }
@@ -859,11 +857,6 @@ textarea {
   .gallery-item,
   .gallery-item img {
     min-height: 240px;
-  }
-
-  .gallery-carousel-heading {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .gallery-category-nav {
