@@ -6,9 +6,12 @@ const galleryLinks = document.querySelectorAll("[data-gallery-filter]");
 const form = document.querySelector(".quote-form");
 const formNote = document.querySelector(".form-note");
 const header = document.querySelector(".site-header");
+const galleryPageButtons = document.querySelectorAll("[data-gallery-page-filter]");
+const galleryPageSections = document.querySelectorAll("[data-gallery-section]");
 
 const updateHeader = () => {
-  header.classList.toggle("scrolled", window.scrollY > 24);
+  const shouldStaySolid = header.dataset.fixedHeader === "true";
+  header.classList.toggle("scrolled", shouldStaySolid || window.scrollY > 24);
 };
 
 if (header) {
@@ -53,6 +56,33 @@ const setGalleryFilter = (filter) => {
     item.classList.toggle("hidden", filter !== "all" && item.dataset.category !== filter);
   });
 };
+
+const setGalleryPageFilter = (filter) => {
+  galleryPageButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.galleryPageFilter === filter);
+  });
+
+  galleryPageSections.forEach((section) => {
+    section.classList.toggle("hidden", section.dataset.gallerySection !== filter);
+  });
+};
+
+if (galleryPageButtons.length && galleryPageSections.length) {
+  const validFilters = Array.from(galleryPageButtons).map((button) => button.dataset.galleryPageFilter);
+  const initialFilter = validFilters.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : validFilters[0];
+  setGalleryPageFilter(initialFilter);
+  if (window.location.hash) {
+    window.scrollTo({ top: 0 });
+  }
+
+  galleryPageButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.galleryPageFilter;
+      setGalleryPageFilter(filter);
+      history.replaceState(null, "", `#${filter}`);
+    });
+  });
+}
 
 if (form && formNote) {
   form.addEventListener("submit", async (event) => {

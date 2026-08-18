@@ -445,7 +445,9 @@ section {
 }
 
 .filter.active,
-.filter:hover {
+.filter:hover,
+.gallery-type-button.active,
+.gallery-type-button:hover {
   border-color: var(--forest);
   background: var(--forest);
   color: var(--white);
@@ -850,8 +852,31 @@ textarea {
   max-width: 680px;
 }
 
+.gallery-type-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.gallery-type-button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-weight: 900;
+  cursor: pointer;
+}
+
 .gallery-page-section {
   padding-top: clamp(46px, 7vw, 80px);
+}
+
+.gallery-page-section.hidden {
+  display: none;
 }
 
 @media (max-width: 960px) {

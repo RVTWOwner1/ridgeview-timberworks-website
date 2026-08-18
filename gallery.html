@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header scrolled">
+    <header class="site-header scrolled" data-fixed-header="true">
       <a class="brand" href="index.html#home" aria-label="Ridgeview Timberworks home">
         <img class="logo logo-color" src="assets/ridgeview-logo.png" alt="Ridgeview Timberworks" />
       </a>
@@ -26,8 +26,14 @@
         <p class="eyebrow">Portfolio Gallery</p>
         <h1>Project Gallery</h1>
         <p>Browse Ridgeview Timberworks projects by timber type.</p>
+        <div class="gallery-type-nav" aria-label="Project gallery categories">
+          <button class="gallery-type-button active" type="button" data-gallery-page-filter="trusses">Timber Trusses</button>
+          <button class="gallery-type-button" type="button" data-gallery-page-filter="beams">Timber Beams &amp; Posts</button>
+          <button class="gallery-type-button" type="button" data-gallery-page-filter="outdoor">Outdoor Living Timber Structures</button>
+          <button class="gallery-type-button" type="button" data-gallery-page-filter="mantels">Timber Mantels, Brackets, etc.</button>
+        </div>
       </section>
-      <section id="trusses" class="gallery-page-section">
+      <section id="trusses" class="gallery-page-section" data-gallery-section="trusses">
         <div class="section-heading">
           <p class="eyebrow">Timber Trusses</p>
           <h2>Timber Trusses</h2>
@@ -101,7 +107,7 @@
             <figcaption>Timber Truss 024</figcaption>
           </figure>        </div>
       </section>
-      <section id="beams" class="gallery-page-section">
+      <section id="beams" class="gallery-page-section" data-gallery-section="beams">
         <div class="section-heading">
           <p class="eyebrow">Timber Beams & Posts</p>
           <h2>Timber Beams & Posts</h2>
@@ -142,7 +148,7 @@
             <figcaption>Timber Beam and Post 011</figcaption>
           </figure>        </div>
       </section>
-      <section id="outdoor" class="gallery-page-section">
+      <section id="outdoor" class="gallery-page-section" data-gallery-section="outdoor">
         <div class="section-heading">
           <p class="eyebrow">Outdoor Living Timber Structures</p>
           <h2>Outdoor Living Timber Structures</h2>
@@ -216,7 +222,7 @@
             <figcaption>Outdoor Structure 022</figcaption>
           </figure>        </div>
       </section>
-      <section id="mantels" class="gallery-page-section">
+      <section id="mantels" class="gallery-page-section" data-gallery-section="mantels">
         <div class="section-heading">
           <p class="eyebrow">Timber Mantels, Brackets, etc.</p>
           <h2>Timber Mantels, Brackets, etc.</h2>
