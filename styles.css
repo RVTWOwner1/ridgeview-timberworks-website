@@ -482,7 +482,7 @@ section {
 
 .gallery-carousel-track {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: inline mandatory;
@@ -495,8 +495,8 @@ section {
 
 .gallery-carousel-slide {
   position: relative;
-  flex: 0 0 clamp(300px, 42vw, 720px);
-  height: clamp(310px, 34vw, 520px);
+  flex: 0 0 clamp(255px, 36vw, 612px);
+  height: clamp(264px, 29vw, 442px);
   overflow: hidden;
   scroll-snap-align: start;
   background: #111;
@@ -881,8 +881,8 @@ textarea {
   }
 
   .gallery-carousel-slide {
-    flex-basis: min(82vw, 420px);
-    height: 320px;
+    flex-basis: min(70vw, 357px);
+    height: 272px;
   }
 
   .site-footer img {

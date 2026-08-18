@@ -152,7 +152,7 @@ homeGalleryLinks.forEach((link) => {
 const scrollGallery = (direction) => {
   if (!carouselTrack) return;
   const slide = carouselTrack.querySelector(".gallery-carousel-slide");
-  const distance = slide ? slide.getBoundingClientRect().width + 10 : carouselTrack.clientWidth * 0.8;
+  const distance = slide ? slide.getBoundingClientRect().width + 15 : carouselTrack.clientWidth * 0.8;
   carouselTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
 };
 
