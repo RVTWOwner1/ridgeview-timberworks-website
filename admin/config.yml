@@ -2,10 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: true
 site_url: "https://ridgeview-timberworks-preview.netlify.app"
 display_url: "https://ridgeview-timberworks-preview.netlify.app"
-logo_url: "/assets/ridgeview-logo-color.png"
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
