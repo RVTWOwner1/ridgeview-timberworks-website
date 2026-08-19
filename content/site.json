@@ -1,11 +1,11 @@
 {
   "contact": {
     "eyebrow": "Contact",
-    "heading": "Call, email, or send plans when you are ready.",
+    "heading": "Call, email or send plans when you are ready.",
     "cards": [
       {
         "heading": "Ridgeview Timberworks",
-        "body": "2590 Hwy. 78 South<br />Farmersville, TX 75442"
+        "body": "2590 Hwy. 78 South<br />Farmersville, TX  75442"
       },
       {
         "heading": "Call or Email"
@@ -17,7 +17,7 @@
     ]
   },
   "craft": {
-    "eyebrow": "Built with jobsite experience",
+    "eyebrow": "Built with real-world experience",
     "heading": "Good timberwork starts with clear dimensions.",
     "body": "Ridgeview Timberworks reviews the drawings, asks about the opening sizes and support points, and builds the timber pieces to match the approved plan. Trusses may use traditional joinery, steel plates with through bolts, or engineered screw assemblies depending on the job.",
     "linkLabel": "Send plans for review"
@@ -25,7 +25,7 @@
   "intro": {
     "eyebrow": "Made for upscale homes and commercial properties",
     "heading": "Custom timberwork built to spec from your plans.",
-    "body": "Ridgeview Timberworks works with builders, architects, and contractors. Send plans, dimensions, photos, etc. and Ridgeview Timberworks can help price the trusses, beams, posts, mantels, brackets, and outdoor timber pieces needed for the job."
+    "body": "Ridgeview Timberworks works with builders, architects and contractors. Send plans, dimensions, photos, etc. and we will price the trusses, beams, posts, mantels, brackets, and outdoor timber pieces needed for the project."
   },
   "process": {
     "eyebrow": "Quote Process",
@@ -90,12 +90,12 @@
     "secondaryButton": "View our Work"
   },
   "footer": {
-    "body": "Custom timber trusses, beams, mantels, and outdoor structures from Farmersville, Texas."
+    "body": "Custom timber trusses, beams, mantels and outdoor living structures from Farmersville, Texas."
   },
   "quote": {
     "eyebrow": "Request a Quote",
-    "heading": "Send the project details, and Ridgeview Timberworks will quote the timber package.",
-    "body": "Plans, dimensions, photos, species, texture preferences, and delivery location help Ridgeview Timberworks price the job correctly. If the project includes structural trusses, your engineering documents and stamped truss drawings are required before a firm estimate can be generated.",
+    "heading": "Send the project details and let us quote your timber package.",
+    "body": "Plans, dimensions, photos, species, texture preferences and delivery location help us price the job correctly. If the project includes structural trusses, your engineering documents and stamped truss drawings are required before a firm estimate can be generated.",
     "contactHeading": "Prefer to talk first?",
     "form": {
       "phoneLabel": "Phone",
@@ -103,7 +103,7 @@
       "plansLabel": "Plans or Engineering Documents",
       "referencePhotoLabel": "Reference Photo",
       "additionalFileLabel": "Additional File",
-      "notesPlaceholder": "Tell us what you are building, approximate sizes, timing, species, texture preferences, and anything else that matters.",
+      "notesPlaceholder": "Tell us what you are building, approximate sizes, timing, species, texture preferences and anything else that matters.",
       "notesLabel": "Project Notes",
       "emailLabel": "Email",
       "phaseLabel": "Project Phase",
@@ -123,7 +123,7 @@
       "trusses": {
         "heading": "Timber Trusses",
         "linkLabel": "View truss gallery",
-        "body": "Timber trusses for great rooms, porches, entries, churches, pavilions, and commercial spaces.",
+        "body": "Timber trusses for great rooms, porches, entries, churches, pavilions and commercial spaces.",
         "bullets": [
           "Mortise-and-tenon options",
           "Metal plate and through-bolt assemblies",
@@ -145,7 +145,7 @@
       "outdoor": {
         "heading": "Outdoor Living Timber Structures",
         "linkLabel": "View outdoor gallery",
-        "body": "Timber for pavilions, pergolas, covered patios, pool areas, outdoor kitchens, and entry features.",
+        "body": "Timber for pavilions, pergolas, covered patios, pool areas, outdoor kitchens and more.",
         "bullets": [
           "Built for homes, neighborhoods, and commercial projects",
           "Cut for the dimensions of the structure",
@@ -156,7 +156,7 @@
       "mantels": {
         "heading": "Timber Mantels, Brackets, etc.",
         "linkLabel": "View mantel and bracket gallery",
-        "body": "Mantels, brackets, corbels, rafter tails, and fireplace timbers built to fit the space.",
+        "body": "Mantels, brackets, corbels, rafter tails, etc. built to spec.",
         "bullets": [
           "Built to room dimensions",
           "Hand-hewn and time-worn texture options",
